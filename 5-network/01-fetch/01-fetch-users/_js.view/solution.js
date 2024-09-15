@@ -2,7 +2,7 @@
 async function getUsers(names) {
   let jobs = [];
 
-  for(let name of names) {
+  for(let name of names) { //
     let job = fetch(`https://api.github.com/users/${name}`).then(
       successResponse => {
         if (successResponse.status != 200) {
